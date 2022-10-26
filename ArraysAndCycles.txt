@@ -1,0 +1,81 @@
+1. Дан массив состоящий из названий фильмов, выполните перебор массива с выводом в консоль названия каждого фильма
+
+let films = ["Terminator", "Terminator 2", "Home alone", "Home alone 2", "Matrix"]
+for (let film of films) {
+ alert(film);
+}
+
+
+2. Дан массив производителей автомобилей, преобразовать массив в строку и обратно в массив
+
+let autos = ["Audi", "Mercedes", "BMW", "Skoda", "Opel"]﻿
+let autosString =  autos.join(", ");
+alert(autosString);
+let autosArray = autosString.split(", ");
+alert(autosArray)
+
+
+3. Дан массив имен ваших знакомых, добавить к каждому элементу массива слова hello
+
+let names = ["John", "Kate", "James", "Ben", "Steve"]
+let namesHello = names.map(name => name + " Hello");
+alert(namesHello)
+
+
+4. Преобразовать числовой массив в Boolean     
+    
+let numbers = [1,6,7,8,3,4,5,6];
+let numbersToBoolean = Boolean(numbers);
+alert(numbersToBoolean)
+
+5. Отсортировать массив [1,6,7,8,3,4,5,6] по убыванию
+
+let numbers = [1,6,7,8,3,4,5,6];
+numbers.sort( (a, b) => b - a);
+alert(numbers)
+
+
+6. Отфильтровать массив [1,6,7,8,3,4,5,6] по значению >3 
+
+let numbers = [1,6,7,8,3,4,5,6]
+let numbersMore3 = numbers.filter(number => number > 3)
+alert(numbersMore3)
+
+7. Написать функцию, которая принимает два параметра - массив и число и выводит индекс элемента массива равный числу
+
+function arraySearch(arr, n){
+    alert(arr[n])
+}
+
+8. ﻿Реализовать цикл, который будет выводить число а, пока оно не станет меньше 10
+
+let a = 100;
+while (a > 9) {
+    alert('a = ' + a)
+    a--
+}
+
+9. Реализовать цикл, который выводит в консоль простые числа
+
+let n = 10;
+
+nextPrime:
+for (let i = 2; i <= n; i++) { 
+
+  for (let j = 2; j < i; j++) { 
+    if (i % j == 0) continue nextPrime; 
+  }
+
+  alert(i); 
+}
+
+10. Реализовать цикл, который выводит в консоль нечетные числа
+
+for(let i=1; i<100; i++) {
+    if (i % 2 == 0) continue;
+    alert(i)
+}
+
+
+
+﻿
