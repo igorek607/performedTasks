@@ -1,0 +1,55 @@
+Создать объект car, добавить к нему свойство color со значением 'черный'
+
+Изменить свойство color объекта car на 'зеленый'
+
+В объект car добавить свойство power, которое является функцией и выводит в консоль мощность двигателя
+
+let car = {}
+car.color = "black";
+car.color = "green";
+car.power = 
+function showPower(power) {
+ console.log(power)
+}
+
+На склад принимают груши и яблоки, напишите функцию, которая возвращает результат сложения количества принятых груш и яблок
+
+function getSumApplesAndPears(apples, pears){
+  let sum = apples + pears;
+  alert(sum)
+}
+
+В терминале оплаты сохранено ваше имя, напишите функцию для определения имени в терминале(если вы ввели ваше имя, то привет + имя, если нет, то нет такого имени)
+
+function checkName(name) {
+  if (name == "Игорь") {
+  alert("Привет " + name)
+} else {
+  alert("Нет такого имени")
+}
+}
+
+Напишите функцию вычисления типа аргумента и вывод типа в консоль
+
+function getTypeOfArg(arg) {
+  let type = typeof arg;
+  console.log(type)
+}
+
+
+Напишите функцию, которая определяет является ли число простым или нет
+
+function isPrime(n) {
+  for (let i=2; i<n; i++){
+    if(n % i == 0) return false;
+  }
+  return true;
+}
+
+
+
+
+  
+
+
+
