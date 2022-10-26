@@ -1,0 +1,15 @@
+try {
+  console.log(a)
+  let a = 3
+ } catch(err) {
+ alert(`let перед использованием нужно объявить`)
+}
+
+
+try {
+   alert(1/0)
+} catch(e) {
+  alert(`эта ошибка не выведется`)
+} finally {
+   alert(`на ноль делить нельзя`)
+}
